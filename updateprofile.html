@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Expenses</title>
+    <style>
+    body {
+        font-family:'Times New Roman', Times, serif;
+        background-color: #cde3ff;
+        margin: 0;
+        font-size: 25px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    h2 {
+        color: #333;
+        text-align: center;
+    }
+    
+    form {
+        margin: 10px;
+    }
+    button {
+        background-color: #0c0463;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #2528ce;
+    }
+</style>
+</head>
+<body>
+    <div id="con">
+    <h2>Change Details</h2>
+    
+    <!-- Form for selecting expense view type -->
+    <form action="personaldetails.php" method="post">
+        <button type="submit" name="view_date">Personal Details</button>
+    </form>
+    
+    <form action="securitydetails.php" method="post">
+        <button type="submit" name="view_month">Security Details</button>
+    </form>
+</div>
+</body>
+</html>

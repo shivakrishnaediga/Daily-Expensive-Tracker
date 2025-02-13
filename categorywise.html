@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Expenses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin-top: 40px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        #con{
+          display: flex;
+          justify-content:space-around;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #7260eb;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #5238ff;
+        }
+    </style>
+</head>
+<body>
+    <h2>View Category-wise Expenses</h2>
+    
+    <div class="image-container">
+        <img src="https://img.freepik.com/premium-vector/vector-illustration-about-time-is-money-saving-time-business-concept_675567-3987.jpg?w=826" alt="Image 1">
+        <img src="https://img.freepik.com/free-vector/flat-woman-with-personal-financial-bill-payment-calendar_88138-935.jpg?t=st=1715610232~exp=1715613832~hmac=e82fbc423cafebc3537a555710383092909a55f2e872ca91a66f01e45c631b28&w=826" alt="Image 2">
+        <img src="https://img.freepik.com/premium-vector/time-management-planning-control-concept-effiecient-succesful-profitable-business-flat-composition-poster-illustration_114482-133.jpg?w=740" alt="Image 3">
+    </div>
+    <br>
+    <br>
+    <div id="con">
+    <!-- Form for selecting expense view type -->
+    <form action="datewisecategory.php" method="post">
+        <button type="submit" name="view_date">View Date-wise Reports</button>
+    </form>
+    <br>
+    <form action="monthwisecategory.php" method="post">
+        <button type="submit" name="view_month">View Monthly Reports</button>
+    </form>
+    <br>
+    <form action="yearwisecategory.php" method="post">
+        <button type="submit" name="view_year">View Yearly Reports</button>
+    </form>
+</div>
+
+</body>
+</html>

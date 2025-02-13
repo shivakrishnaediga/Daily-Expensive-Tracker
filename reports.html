@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Expenses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin:40px 90px ;
+            background-color: #edd9f3 ;
+        }
+        .image-section {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .image {
+            width: 400px; 
+            height:300px;
+            margin: 0 30px; 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .button-section {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #7260eb;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 180px;
+            margin-right: 180px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #5238ff;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            View Expenses
+        </h1>
+        <div class="image-section">
+            <img class="image" src="https://img.freepik.com/free-vector/mobile-expense-management-abstract-concept-vector-illustration-charges-control-system-satelite-devices-checking-mobile-network-enterprise-economy-manage-telephony-costs-abstract-metaphor_335657-2906.jpg?t=st=1715581402~exp=1715585002~hmac=653da6412844d869751613a43c822e8af839bd04d9c0294f7eda965292475987&w=740" alt="Image 1">
+            <img class="image" src="https://img.freepik.com/premium-vector/investor-woman-with-laptop-monitoring-growth-dividends_186332-617.jpg?w=826" alt="Image 2">
+        </div>
+        <div class="button-section">
+    <form action="amountwise.html" method="post">
+        <button type="submit" name="view_date">Amount-wise</button>
+    </form>
+    <br>
+    <form action="categorywise.html" method="post">
+        <button type="submit" name="view_month">Category-wise</button>
+    </form>
+    </div>
+    </div>
+</body>
+</html>

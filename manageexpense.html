@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Webpage with Image and Buttons</title>
+<style>
+  body {
+    height: 90vh;
+    margin: 0;
+    background-color: #7260eb;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+    height: 75%;
+    background-color: white;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Added shadow */
+
+  }
+  .image-section {
+    flex: 1;
+    text-align: center;
+  }
+  .image-section img{
+    width: 500px;
+  }
+  .buttons-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  button{
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7260eb;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  button:hover {
+    background-color: #5238ff;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+    <h1>View Expenses</h1>
+    <div class="container">
+        <div class="image-section">
+            <img src=" https://img.freepik.com/free-vector/hand-drawn-employee-savings-plan-illustration_52683-143701.jpg?w=826&t=st=1715506272~exp=1715506872~hmac=2a02bc930b385644509c53a9a0c54e95be55ed461265e97f1408c7e16128fc34" alt="Employee Savings Plan Illustration" width="400">
+        </div>
+        <div class="buttons-section">
+            <form action="datewise.php" method="post">
+                <button type="submit" name="view_date">Date-wise</button>
+            </form>
+            
+            <form action="monthlywise.php" method="post">
+                <button type="submit" name="view_month">Month-wise</button>
+            </form>
+            <form action="yearwise.php" method="post">
+                <button type="submit" name="view_year">Year-wise</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
